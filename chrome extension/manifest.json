@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["./main.js"],
+      "js": ["jquery.min.js", "./main.js"],
       "css": ["./style.css"]
     }
   ],
@@ -20,11 +20,11 @@
     "default_title": "Move Event",
     "default_popup": "popup.html"
   },
-  // "icons": {
-  //   "16": "logo.png", 
-  //   "32": "logo.png",
-  //   "48": "logo.png",
-  //   "128": "logo.png"
-  // }
+  "icons": {
+    "16": "logo.png", 
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
 }
 

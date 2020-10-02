@@ -25,7 +25,7 @@ $("#button").click(function(){
     }
 
 
-  }, 200);
+  }, 250);
 
 
 

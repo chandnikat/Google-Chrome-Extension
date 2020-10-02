@@ -1,0 +1,72 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: arial,sans-serif;
+  color: #0a3242;
+  text-decoration: none;
+  background-color: #fcfcfc;;
+  width: 220px;
+  height: 220px;
+  border: 2px solid #dfe1e5;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  width: 50px;
+  margin: 9px;
+  opacity: .90;
+}
+#message {
+  margin-bottom: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.text {
+  font-size: smaller;
+  margin: 2px;
+}
+
+#timer {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#button {
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  padding: 6px;
+  padding-bottom: 25px;
+  margin-top: 10px;
+  background-color: #5398b3;
+  border: solid #53a0b3 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 160px;
+  height: 15px;
+}
+
+#button:hover {
+  background: white;
+  color: #53a0b3;
+  border: solid #53a0b3 2px;
+  border-radius: 4px;
+}
+
+.turnRed {
+  color: rgb(214, 101, 101);
+}

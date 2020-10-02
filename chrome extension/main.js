@@ -1,15 +1,17 @@
 $("#button").click(function(){
-  let count = 30;
+  let count = 25;
   $("#timer").text(count);
-  $("#message").text("Timer Active!")
+  $("#timer").toggleClass( "turnRed");
+  $("#message").text("Timer Active!");
 
-  const set = setInterval(function() {
+  const intervalID1 = setInterval(function() {
     count -= 1;
     $("#timer").text(count);
 
     if(count === 0) {
-      clearInterval(set);
-      $("#message").text("get up and move!!!!!!")
+      clearInterval(intervalID1);
+      $("#timer").toggleClass( "turnRed")
+      $("#message").text("Get up and move!")
 
 
 
@@ -23,13 +25,12 @@ $("#button").click(function(){
     }
 
 
-
-
-
-
-
-
-
-
   }, 200);
+
+
+
+
+
+
+
 });

@@ -31,7 +31,7 @@ function countDown (){
     if(count2 <0){
         $("#break-timer").toggleClass( "turnRed");
         $("#break-message").text("Back to work!");
-        $("break-button").text("Click to Exit")
+        $("#break-status").text("Click to Exit")
         $("#picture").attr("src", `${images[idx]}`)
 
     } else {

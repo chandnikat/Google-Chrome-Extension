@@ -48,7 +48,11 @@ $("#button").click(function(){
       
       //Pop up window once time ends
       chrome.windows.create({url: `${images[idx]}`, type: "popup"});
-
+      // window.open(
+      //   chrome.extension.getURL(`${images[idx]}`),
+      //   "exercise", 
+      //   "width=400, height=400"
+      //   );
     }
 
 

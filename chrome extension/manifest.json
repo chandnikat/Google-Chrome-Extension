@@ -9,13 +9,10 @@
     "notifications",
     "tabs"
   ],
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["./main.js"]
-
-    }
-  ],
+  "background": {
+    "scripts": ["./main.js"],
+    "persistent": true
+  },
   "browser_action": {
     "default_title": "Move Event",
     "default_popup": "popup.html"

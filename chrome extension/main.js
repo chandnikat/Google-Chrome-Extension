@@ -58,36 +58,30 @@ $("#button").click(function(){
 
 
       //needs a triger
-      let count2 = 5;
-      $("#break-timer").text(count2);
-      $("#break-timer").toggleClass( "turnRed");
-      $("#break-message").text("Timer Active!");
+      // let count2 = 5;
+      // $("#break-timer").text(count2);
+      // $("#break-timer").toggleClass( "turnRed");
+      // $("#break-message").text("Timer Active!");
 
-      const intervalID2 = setInterval(function() {
-        count2 -= 1;
-        $("#break-timer").text(count);
+      // const intervalID2 = setInterval(function() {
+      //   count2 -= 1;
+      //   $("#break-timer").text(count);
     
-        if(count2 === 0) {
-          clearInterval(intervalID2);
-          $("#break-timer").toggleClass( "turnRed");
-          $("#break-message").text("Back to work!");
+      //   if(count2 === 0) {
+      //     clearInterval(intervalID2);
+      //     $("#break-timer").toggleClass( "turnRed");
+      //     $("#break-message").text("Back to work!");
      
-                 
+      //   }
     
     
-        }
-    
-    
-      }, 50);
+      // }, 50);
              
 
-
-
-      
 
     }
 
 
-  }, 50);
+  }, 500);
 
 });

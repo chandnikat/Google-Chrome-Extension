@@ -1,3 +1,4 @@
+//motivational quote image array
 const images = [
     "motivationimages/mot0.png",
     "motivationimages/mot2.png",
@@ -16,9 +17,10 @@ const images = [
     
   ]
 
+//Randomizer for generating motivational quote image
 const idx = [Math.floor(Math.random() * 14)];
 
-console.log("JS working?!?")
+//Count down function:
 let count2 = 5;
  $("#break-timer").text(count2);
  $("#break-timer").toggleClass( "turnRed");
@@ -34,4 +36,4 @@ function countDown (){
     $("#break-timer").text(count2);
     }
 }
-setInterval(countDown, 100)
+setInterval(countDown, 1000)

@@ -45,8 +45,7 @@ $("#button").click(function(){
       $("#message").text("Get up and move!");
       const idx = [Math.floor(Math.random() * 12)];
       
-      // chrome.windows.create({url: `${images[idx]}`, type: "popup"});
-
+      //Pop up window once time ends
       chrome.windows.create({url: `${images[idx]}`, type: "popup"});
 
   
@@ -54,15 +53,10 @@ $("#button").click(function(){
       //   console.log("I was clicked");
       // }).trigger("click");
 
-
-
-   
-          
-
     }
 
 
-  }, 50);
+  }, 1000);
 
 
 

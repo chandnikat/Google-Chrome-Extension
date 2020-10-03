@@ -42,8 +42,8 @@ function countDown (){
 }
 setInterval(countDown, 2500)
 
-//Exit out of window button
-// $("#break-button").click(function() {
-//      console.log("I was clicked");
-//      window.close()
-// }).trigger("click");
+// Exit out of window button
+$("#break-button").click(function() {
+     console.log("I was clicked");
+     window.close()
+});

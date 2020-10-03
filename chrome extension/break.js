@@ -14,11 +14,13 @@ const images = [
     "motivationimages/mot12.png",
     "motivationimages/mot13.png",
     "motivationimages/mot14.png",
+    "motivationimages/mot15.png",
+    "motivationimages/mot16.png",
     
   ]
 
 //Randomizer for generating motivational quote image
-const idx = [Math.floor(Math.random() * 14)];
+const idx = [Math.floor(Math.random() * 16)];
 
 //Count down function:
 let count2 = 5;
@@ -43,4 +45,5 @@ setInterval(countDown, 2500)
 //Exit out of window button
 $("#break-button").click(function() {
      console.log("I was clicked");
+     window.close()
 }).trigger("click");

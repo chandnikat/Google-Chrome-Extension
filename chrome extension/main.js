@@ -47,7 +47,7 @@ $("#button").click(function(){
       
       // chrome.windows.create({url: `${images[idx]}`, type: "popup"});
 
-      chrome.windows.create({url: `${images[0]}`, type: "popup"});
+      chrome.windows.create({url: `${images[idx]}`, type: "popup"});
 
   
       // $("#break-button").click(function() {

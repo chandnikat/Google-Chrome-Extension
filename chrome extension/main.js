@@ -1,6 +1,3 @@
-
-
-
 const images = [
   "image1.html",
   "image2.html",
@@ -10,6 +7,11 @@ const images = [
   "image6.html",
   "image7.html",
   "image8.html",
+  "image9.html",
+  "image10.html",
+  "image11.html",
+  "image12.html",
+
 ]
 
 // const videos = [

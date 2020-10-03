@@ -47,41 +47,23 @@ $("#button").click(function(){
       
       // chrome.windows.create({url: `${images[idx]}`, type: "popup"});
 
-
       chrome.windows.create({url: `${images[0]}`, type: "popup"});
-      
+
   
-      $("#break-button").click(function() {
-        console.log("I was clicked");
-      }).trigger("click");
+      // $("#break-button").click(function() {
+      //   console.log("I was clicked");
+      // }).trigger("click");
 
 
 
-      //needs a triger
-      // let count2 = 5;
-      // $("#break-timer").text(count2);
-      // $("#break-timer").toggleClass( "turnRed");
-      // $("#break-message").text("Timer Active!");
-
-      // const intervalID2 = setInterval(function() {
-      //   count2 -= 1;
-      //   $("#break-timer").text(count);
-    
-      //   if(count2 === 0) {
-      //     clearInterval(intervalID2);
-      //     $("#break-timer").toggleClass( "turnRed");
-      //     $("#break-message").text("Back to work!");
-     
-      //   }
-    
-    
-      // }, 50);
-             
-
+   
+          
 
     }
 
 
-  }, 500);
+  }, 50);
+
+
 
 });

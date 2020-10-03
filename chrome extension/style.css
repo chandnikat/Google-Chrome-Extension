@@ -28,6 +28,7 @@ body {
   width: 50px;
   margin: 9px;
   opacity: .90;
+  z-index: 100;
 }
 #message {
   margin-bottom: 10px;

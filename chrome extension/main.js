@@ -1,32 +1,31 @@
+
+
+
 const images = [
-  "/images/image1.png",
-  "/images/image2.png",
-  "/images/image3.png",
-  "/images/image4.png",
-  "/images/image5.png",
-  "/images/image6.png",
-  "/images/image7.png",
-  "/images/image8.png",
-  "/images/image9.png",
-  "/images/image10.png",
-  "/images/image11.png",
-  "/images/image12.png",
+  "image1.html",
+  "image2.html",
+  "image3.html",
+  "image4.html",
+  "image5.html",
+  "image6.html",
+  "image7.html",
+  "image8.html",
 ]
 
-const videos = [
-  "/videos/video1.mp4",
-  "/videos/video2.mp4",
-  "/videos/video3.mp4",
-  "/videos/video4.mp4",
-  "/videos/video5.mp4",
-  "/videos/video6.mp4",
-  "/videos/video7.mp4",
-  "/videos/video8.mp4",
-  "/videos/video9.mp4",
-  "/videos/video10.mp4",
-  "/videos/video11.mp4",
-  "/videos/video12.mp4" 
-]
+// const videos = [
+//   "/videos/video1.mp4",
+//   "/videos/video2.mp4",
+//   "/videos/video3.mp4",
+//   "/videos/video4.mp4",
+//   "/videos/video5.mp4",
+//   "/videos/video6.mp4",
+//   "/videos/video7.mp4",
+//   "/videos/video8.mp4",
+//   "/videos/video9.mp4",
+//   "/videos/video10.mp4",
+//   "/videos/video11.mp4",
+//   "/videos/video12.mp4" 
+// ]
 
 
 $("#button").click(function(){
@@ -44,15 +43,15 @@ $("#button").click(function(){
       $("#timer").toggleClass( "turnRed");
       $("#message").text("Get up and move!");
       const idx = [Math.floor(Math.random() * 12)];
-
-      const image = $('<img />',
-             { id: 'image',
-               src: images[idx], 
-               width: 800,
-               height: 800,
-             })
+      
+      // const image = $('<img />',
+      //        { id: 'image',
+      //          src: images[idx], 
+      //          width: 800,
+      //          height: 800,
+      //        })
+      chrome.windows.create({url: `${images[idx]}`, type: "popup"})       
              
-      window.document.body.appendChild(image);
 
 
  
@@ -67,7 +66,7 @@ $("#button").click(function(){
     }
 
 
-  }, 250);
+  }, 50);
 
 
 

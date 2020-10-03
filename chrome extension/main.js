@@ -13,7 +13,7 @@
 //   "/videos/video12.mp4" 
 // ]
 
-
+//Exercise pages array
 const images = [
   "image1.html",
   "image2.html",
@@ -29,6 +29,7 @@ const images = [
   "image12.html",
 ]
 
+//Extension timer button
 $("#button").click(function(){
   let count = 25;
   $("#timer").text(count);
@@ -47,11 +48,6 @@ $("#button").click(function(){
       
       //Pop up window once time ends
       chrome.windows.create({url: `${images[idx]}`, type: "popup"});
-
-  
-      // $("#break-button").click(function() {
-      //   console.log("I was clicked");
-      // }).trigger("click");
 
     }
 

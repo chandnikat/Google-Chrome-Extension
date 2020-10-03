@@ -1,20 +1,22 @@
 const images = [
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
-    "motivationimages/mot1.png",
+    "motivationimages/mot0.png",
+    "motivationimages/mot2.png",
+    "motivationimages/mot3.png",
+    "motivationimages/mot4.png",
+    "motivationimages/mot5.png",
+    "motivationimages/mot6.png",
+    "motivationimages/mot7.png",
+    "motivationimages/mot8.png",
+    "motivationimages/mot9.png",
+    "motivationimages/mot10.png",
+    "motivationimages/mot11.png",
+    "motivationimages/mot12.png",
+    "motivationimages/mot13.png",
+    "motivationimages/mot14.png",
     
   ]
 
-const idx = [Math.floor(Math.random() * 12)];
+const idx = [Math.floor(Math.random() * 14)];
 
 console.log("JS working?!?")
 let count2 = 5;
@@ -32,4 +34,4 @@ function countDown (){
     $("#break-timer").text(count2);
     }
 }
-setInterval(countDown, 1000)
+setInterval(countDown, 100)
